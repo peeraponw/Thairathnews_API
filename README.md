@@ -1,6 +1,7 @@
 # Botnoi Final Project
 This project is the final project for Botnoi Python Classroom Module 2: Web Scraping. The goal is to use web scraper to obtain data from [Thairath website](www.thairath.co.th) in any of the following categories: 
-    - [royal](https://www.thairath.co.th/news/royal)
+
+   - [royal](https://www.thairath.co.th/news/royal)
  
    - [local](https://www.thairath.co.th/news/local)
 
@@ -12,8 +13,10 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
    - [crime](https://www.thairath.co.th/news/royal)
 
-The target 
+The target scraped data should contains the following entities:
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NTUwNDc3NV19
+eyJoaXN0b3J5IjpbOTg5Mzc0MjQwXX0=
 -->
