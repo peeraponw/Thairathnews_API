@@ -15,10 +15,10 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
 The target scraped data should contains the following entities: *title*, *published_date*, *content*, *tags*, *cover_img*, *news_url*, *category*. These data is stored in MongoDB. The script is run on Heroku and scheduled to scrape every 1 hour.
 
-
+A Flask WebAPI is developed to allow users to request data from the database with the following fil
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MTU3MjAwXX0=
+eyJoaXN0b3J5IjpbLTE3NDI5NDI5MTNdfQ==
 -->
