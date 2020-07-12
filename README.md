@@ -5,8 +5,8 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
     - [business](https://www.thairath.co.th/news/royal)
     - [foreign](https://www.thairath.co.th/news/royal)
     - [society](https://www.thairath.co.th/news/royal)
-    - [](https://www.thairath.co.th/news/royal)
-    - [royal](https://www.thairath.co.th/news/royal)
+    - [crime](https://www.thairath.co.th/news/royal)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDE2OTE3M119
+eyJoaXN0b3J5IjpbLTIzMzMzNzY0M119
 -->
