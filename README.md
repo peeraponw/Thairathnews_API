@@ -13,10 +13,12 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
    - [crime](https://www.thairath.co.th/news/royal)
 
-The target scraped data should contains the following entities: *title*, *published_date*, *content*, *tags*, *cover_img*, *news_url*, *category*. These data is stored in MongoDB. 
+The target scraped data should contains the following entities: *title*, *published_date*, *content*, *tags*, *cover_img*, *news_url*, *category*. These data is stored in MongoDB. The script is run on Heroku and scheduled to scrape every 1 hour.
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1NjA0MTkzXX0=
+eyJoaXN0b3J5IjpbNzA5MTU3MjAwXX0=
 -->
