@@ -13,12 +13,10 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
    - [crime](https://www.thairath.co.th/news/royal)
 
-The target scraped data should contains the following entities:
-
-- 
+The target scraped data should contains the following entities: *title*, *published_date*, *content*, tags, cover_img, news_url, category
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTk0NTc0OF19
+eyJoaXN0b3J5IjpbNjE3MzI0NTEwXX0=
 -->
