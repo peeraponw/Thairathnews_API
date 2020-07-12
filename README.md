@@ -12,9 +12,9 @@ The target scraped data should contains the following entities: *title*, *publis
 
 Another Flask WebAPI is deployed in Heroku to allow users to request data from the database with filters as follows:
 
-- date
-- tag
-- limit
+- date - show only news in a specific date
+- tag - show only news with given tags
+- limit - give 
 - date and tag simultaneously
 
 # Working Process
@@ -23,5 +23,5 @@ This project started by quick prototyping in Jupyter Notebook. This allows us to
 A Flask local app was then 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDQ0MDg5MV19
+eyJoaXN0b3J5IjpbMTY5NzcwNDMwN119
 -->
