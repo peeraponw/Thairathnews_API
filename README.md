@@ -15,8 +15,10 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
 The target scraped data should contains the following entities:
 
+- 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNTIzOTQ3XX0=
+eyJoaXN0b3J5IjpbMTY5NTk0NTc0OF19
 -->
