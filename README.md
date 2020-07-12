@@ -22,7 +22,7 @@ This project started by quick prototyping in Jupyter Notebook. This allows us to
 
 All tested commands are assembled and refactored in the final script before deploying as a Flask webapp in Heroku. 
 
-# Relavant Technology
+# Relavant Technologies
 - Heroku
 - Flask
 - WebAPI
@@ -30,6 +30,6 @@ All tested commands are assembled and refactored in the final script before depl
 - BeautifulSoup
 - Selenium
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDAwNjUwMTcsLTEzNjIyMTQxNjQsLT
-c0MjE1OTU0NV19
+eyJoaXN0b3J5IjpbLTU4MjY0MTU1LC0xMzYyMjE0MTY0LC03ND
+IxNTk1NDVdfQ==
 -->
