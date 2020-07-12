@@ -20,8 +20,8 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 # Working Process
 This project started by quick prototyping in Jupyter Notebook. This allows us to find target elements in the webpage, test scraping commands, and create a step-by-step documentation.
 
-Crea
+A Flask local app was then 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MzU4ODIzNl19
+eyJoaXN0b3J5IjpbLTQyNDQ0MDg5MV19
 -->
