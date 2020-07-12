@@ -17,8 +17,9 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 - limit
 - date and tag simultaneously
 
-
+# Working Process
+This project started by a quick prototype finding target elements, testing the scraping commands 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjEzMjE2MTRdfQ==
+eyJoaXN0b3J5IjpbLTEyODM5MDE1MjNdfQ==
 -->
