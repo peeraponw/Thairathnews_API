@@ -3,7 +3,7 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
    - [royal](https://www.thairath.co.th/news/royal)
    - [local](https://www.thairath.co.th/news/local)
-   - [business](https://www.thairath.co.th/news/royal)
+   - [business](https://www.thairath.co.th/news/royal) <- This repository select this category
    - [foreign](https://www.thairath.co.th/news/royal)
    - [society](https://www.thairath.co.th/news/royal)
    - [crime](https://www.thairath.co.th/news/royal)
@@ -18,8 +18,8 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 - date and tag simultaneously
 
 # Working Process
-This project started by a quick prototype finding target elements, testing the scraping commands 
+This project started by quick prototyping in Jupyter Notebook. This allows us to find target elements in the webpage, test scraping command, and 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODM5MDE1MjNdfQ==
+eyJoaXN0b3J5IjpbLTg3NjM1MjQ4XX0=
 -->
