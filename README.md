@@ -22,6 +22,14 @@ This project started by quick prototyping in Jupyter Notebook. This allows us to
 
 All tested commands are assembled and refactored in the final script before deploying as a Flask webapp in Heroku. 
 
+# Relavant Technology
+- Heroku
+- Flask
+- WebAPI
+- MongoDB
+- BeautifulSoup
+- Selenium
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjIyMTQxNjQsLTc0MjE1OTU0NV19
+eyJoaXN0b3J5IjpbLTEwMDAwNjUwMTcsLTEzNjIyMTQxNjQsLT
+c0MjE1OTU0NV19
 -->
