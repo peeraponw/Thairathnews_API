@@ -14,7 +14,7 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 
 - date - show only news in a specific date
 - tag - show only news with given tags
-- limit - give limit of news to be shown
+- limit - limit number of news to be shown
 - date and tag simultaneously
 
 # Working Process
@@ -23,5 +23,5 @@ This project started by quick prototyping in Jupyter Notebook. This allows us to
 A Flask local app was then 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1NDAxMTg5XX0=
+eyJoaXN0b3J5IjpbLTc0MjE1OTU0NV19
 -->
