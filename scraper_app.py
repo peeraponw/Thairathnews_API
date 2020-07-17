@@ -5,8 +5,17 @@ from pymongo import MongoClient
 from flask import Flask, jsonify, request
 from datetime import datetime
 import json
+import os
 
-# def connect_db():
+def connect_db():
+    db_uri = os.environ['MONGODB_URI']
+    client = MongoClient(db_uri, retryWrites=False)
+    db = client['heroku_95w86hmz']
+    collection_name = 'thairath'
+    if collection_name not in db.list_collection_names():
+        db.create_collection(collection_name)
+    collection = db[collection_name]
+    return collection
 
 def scrape_data(url):
     driver = webdriver.Chrome('C:\Program Files\Google\chromedriver.exe')
@@ -30,8 +39,8 @@ def scrape_data(url):
         news['title'].append(s.find('img')['alt'])
         # get category
         news['cat'].append(news['url'][-1].split('/')[4])
-
-    for news_url in news['url']:
+    print(news['url'])
+    for news_url in news['url'][0:5]:
         driver = webdriver.Chrome('C:\Program Files\Google\chromedriver.exe')
         driver.get(news_url)
         
@@ -50,14 +59,35 @@ def scrape_data(url):
         news['content'].append(''.join([c.text for c in contents]))
         driver.close()
         
-    return news
+    # reformulate the news
+    docs = []
+    for i in range(0, len(news['content'])):
+        docs.append({
+            'title': news['title'][i],
+            'pub_date': news['pub_date'][i],
+            'content': news['content'][i],
+            'tags': news['tags'][i],
+            'cover_img': news['cover_img'][i],
+            'url': news['url'][i],
+            'cat': news['cat'][i]
+        })
+    return docs
     
 
 
-# def insert_to_db():
+def insert_to_db(collection, docs):
+    for document in docs:
+        
+        if not collection.find_one(document):
+            collection.insert_one(document)
+    
+        
 
 def main():
-    news = scrape_data('https://www.thairath.co.th/news/business')
-    print(news)
+    docs = scrape_data('https://www.thairath.co.th/news/business')
+    collection = connect_db()    
+    insert_to_db(collection, docs)
+
+
 if __name__=="__main__":
     main()
