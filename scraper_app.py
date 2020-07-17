@@ -27,7 +27,7 @@ def scrape_data(url):
     driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), 
                                 chrome_options=chrome_options)
     driver.get(url)
-    soup = BeautifulSoup(driver.page_source, 'lxml')
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
     driver.close()
     sel = soup.find('h3', text='ข่าวอื่นๆ').find_next('div').find_all('a')
 
@@ -48,10 +48,11 @@ def scrape_data(url):
         news['cat'].append(news['url'][-1].split('/')[4])
     print(news['url'])
     for news_url in news['url'][0:5]:
-        driver = webdriver.Chrome('C:\Program Files\Google\chromedriver.exe')
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), 
+                                chrome_options=chrome_options)
         driver.get(news_url)
         
-        soup = BeautifulSoup(driver.page_source, 'lxml')
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
         # get time
         t = datetime.strptime(soup.find('meta', property='article:published_time')['content'][:-6], '%Y-%m-%dT%H:%M:%S')
         news['pub_date'].append(t.strftime('%Y-%m-%d'))
