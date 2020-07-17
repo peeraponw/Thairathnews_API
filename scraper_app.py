@@ -46,8 +46,8 @@ def scrape_data(url):
         news['title'].append(s.find('img')['alt'])
         # get category
         news['cat'].append(news['url'][-1].split('/')[4])
-    print(news['url'])
-    for news_url in news['url'][0:5]:
+    
+    for news_url in news['url']:
         driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), 
                                 chrome_options=chrome_options)
         driver.get(news_url)
