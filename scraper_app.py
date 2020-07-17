@@ -7,8 +7,15 @@ from datetime import datetime
 import json
 import os
 
+chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--no-sandbox")
+
+
 def connect_db():
-    db_uri = os.environ['MONGODB_URI']
+    db_uri = os.environ.get('MONGODB_URI')
     client = MongoClient(db_uri, retryWrites=False)
     db = client['heroku_95w86hmz']
     collection_name = 'thairath'
@@ -18,7 +25,8 @@ def connect_db():
     return collection
 
 def scrape_data(url):
-    driver = webdriver.Chrome('C:\Program Files\Google\chromedriver.exe')
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), 
+                                chrome_options=chrome_options)
     driver.get(url)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     driver.close()
