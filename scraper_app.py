@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from pymongo import MongoClient
-from flask import Flask, jsonify, request
 from datetime import datetime
 import json
 import os
