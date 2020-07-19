@@ -18,11 +18,14 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 - date and tag simultaneously
 
 # Working Process
-This project started by quick prototyping in Jupyter Notebook. This allows us to find target elements in the webpage, test scraping commands, and create a step-by-step documentation.
+This project started by quick prototyping of the scraper in Jupyter Notebook. This allows us to find target elements in the webpage, test scraping commands, and create a step-by-step documentation.
 
-All tested commands are assembled and refactored in the final script before deploying as a Flask webapp in Heroku. Please find the deployment in this [repo](https://github.com/peeraponw/Thairathnews_flask).
+All tested commands are assembled and refactored in the final script before deploying with a scheduler in Heroku. This repo requires *Heroku Scheduler* and *mLab MongoDB* add-ons. The first one allows us to schedule the scraper to run every given amount of time. Another one creates a simple noSQL database and stores the scraped data there.
 
-*Update* The app is now online [here](https://thairath-news-api.herokuapp.com/api?date=2020-07-17&limit=2&tag=%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99) 
+Please create a database in mLab and make sure that the database's URI is stored in your environment variable. Then simply use command `python scraper_app.py` in the scheduler and that's it.
+
+The data in the database can be access by another [project](https://github.com/peeraponw/Thairathnews_flask) which is running [here](https://thairath-news-api.herokuapp.com/api?date=2020-07-17&limit=2&tag=%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99) 
+
 # Relavant Technologies
 - Heroku
 - Flask
