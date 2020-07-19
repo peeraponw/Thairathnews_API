@@ -3,7 +3,7 @@ This project is the final project for Botnoi Python Classroom Module 2: Web Scra
 
    - [royal](https://www.thairath.co.th/news/royal)
    - [local](https://www.thairath.co.th/news/local)
-   - [business](https://www.thairath.co.th/news/royal) <- This repository select this category
+   - [business](https://www.thairath.co.th/news/royal) <- This repository selects this category
    - [foreign](https://www.thairath.co.th/news/royal)
    - [society](https://www.thairath.co.th/news/royal)
    - [crime](https://www.thairath.co.th/news/royal)
@@ -20,8 +20,9 @@ Another Flask WebAPI is deployed in Heroku to allow users to request data from t
 # Working Process
 This project started by quick prototyping in Jupyter Notebook. This allows us to find target elements in the webpage, test scraping commands, and create a step-by-step documentation.
 
-All tested commands are assembled and refactored in the final script before deploying as a Flask webapp in Heroku. 
+All tested commands are assembled and refactored in the final script before deploying as a Flask webapp in Heroku. Please find the deployment in this [repo](https://github.com/peeraponw/Thairathnews_flask).
 
+*Update* The app is now online [here](https://thairath-news-api.herokuapp.com/api?date=2020-07-17&limit=2&tag=%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99) 
 # Relavant Technologies
 - Heroku
 - Flask
@@ -29,7 +30,3 @@ All tested commands are assembled and refactored in the final script before depl
 - MongoDB
 - BeautifulSoup
 - Selenium
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjY0MTU1LC0xMzYyMjE0MTY0LC03ND
-IxNTk1NDVdfQ==
--->
